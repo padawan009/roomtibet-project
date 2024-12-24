@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Roomtibet</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
-    
+    <header>
+        <div class="header__left">
+            <img class="logo-pic" src="/icons8-mountain-1003.png" alt="" width="80px">
+            <div class="logo-name">Румтибет</div>
+        </div>
+        <div class="header__right">
+            <ul>
+                <li>Главная</li>
+                <li>Про гида</li>
+                <li>Программа тура</li>
+                <li>Стоимость</li>
+                <li>Блог</li>
+                <li>Контакты</li>
+            </ul>
+        <button class="header-button">Консультация</button>
+        </div>
+        <img class="menu-icon" src="./Vector.png" alt="">
+        
+    </header>
+    <main>
+        <h1 class="main__text">Твое путешествие начинается здесь!</h1>
+        <form class="start__search">
+            <label class="start__label">
+                <select class="start__location" name="location">
+                    <option value="" disabled selected>Локация для тура</option>
+                    <option value="ru">Россия</option>
+                    <option value="us">США</option>
+                    <option value="uk">Великобритания</option>
+                </select>
+                <span class="start__span">выберите из списка</span>
+            </label>
+            <div class="start__label">
+                <div class="start__block-date">
+                    <input class="start__date" type="date" name="start-date">
+                    <input class="start__date" type="date" name="final-date">
+                </div>
+                <span class="start__span">укажите диапазон</span>
+            </div>
+            <label class="start__label">
+                <select class="start__quantity" name="quantity">
+                    <option value="" disabled selected>Участники</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <span class="start__span">минимум 4 человека</span>
+            </label>
+            <button class="start__search-program">Найти программу</button>
+        </form>
+    </main>
+    <footer></footer>
 </body>
 </html>
