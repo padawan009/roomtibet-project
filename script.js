@@ -41,8 +41,7 @@ video.addEventListener('play', () => {
 
 // Показ иконки при паузе
 video.addEventListener('pause', () => {
-    container.classList.remove('enlarged');
-    playerIcon.style.display = 'block'; // Показываем иконку
+    playerIcon.style.display = 'none'; // Показываем иконку
 });
 
 // Возврат постера и скрытие контролов после завершения видео

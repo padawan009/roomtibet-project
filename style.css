@@ -215,7 +215,7 @@ button.choose-form__search-program {
 }
 
 .about-tour__video.enlarged {
-    width: 900px;
+    width: 250%;
     position: absolute;
     right: -100%;
     top: 5%;
@@ -227,10 +227,9 @@ button.choose-form__search-program {
 .our-offer {
     display: flex;
     min-height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10%;
-    padding: 0 3%;
+    padding: 0 5%;
     background-image: linear-gradient(to top, rgba(52, 52, 52, 0.1) , rgb(203, 206, 214)), url(./images/pngwing.com\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,15 +237,36 @@ button.choose-form__search-program {
 }
 
 .our-offer__text {
-    max-width: 40vw;
+    max-width: 45vw;
+}
+
+.our-offer__text p, button, img {
+    color: black;
+
+}
+
+.our-offer__text div {
+    display: grid;
+    grid-template-columns: 8vw 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+
+}
+
+.our-offer__text img {
+    
 }
 
 .our-offer__pics {
     display: grid;
     max-width: 40vw;
     align-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60% 60%;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(10vw, 19.5vw));
+    grid-template-rows: minmax(20vh, 35vh) minmax(20vh, 35vh);
+    grid-auto-rows: minmax(20vh, 35vh);
+    /* grid-template-rows: 60% 60%; */
     gap: 10px;
 }
 
