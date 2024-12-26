@@ -12,21 +12,29 @@ body {
     max-width: 100vw;
     display: flex;
     flex-direction: column;
-    background-image: url(./freepik__a-man-is-sitting-with-his-back-to-the-center-of-th__61227.png);
+}
+
+/* блок первая страница */
+
+.start-page {
+    background-image: linear-gradient(rgba(0,0,0,0.1) 60%, rgb(20, 29, 37)), url(./images/freepik__a-man-is-sitting-with-his-back-to-the-center-of-th__61227.png);
     background-size: cover;
+    background-position: 50% 80%;
+    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem 2rem;
+    padding: 0.3% 2%;
 }
 
 .header__right {
     display: flex;
     position: relative;
     align-self: flex-start;
+    flex-shrink: 0;
 }
 
 .logo-pic {
@@ -40,7 +48,9 @@ header {
     text-align: center;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
+    font-size: 0.7rem;
 }
+
 ul {
     display: flex;
     list-style: none;
@@ -60,30 +70,237 @@ li:hover {
     font-size: 16px;
     border-radius: 5%;
     cursor: pointer;
+    padding: 1%;
+    
 }
+
 .header-button:hover {
     color: rgb(53, 88, 149);
     background-color: rgb(211, 226, 226);
+
 }
 
 .menu-icon {
     display: none;
 }
 
-main {
+section.main-page {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    min-height: 100vh;
 }
 
 .main__text {
     text-align: center;
-    font-size: 36px;
+    font-size: 1.5rem;
+    margin-top: 7%;
+    font-weight: 600;
 }
+
+/* форма выбора */
+
+.choose-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(80, 85, 93, 0.526);
+    padding: 30px 40px;
+    gap: 30px;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin-bottom: 1%;
+    flex-wrap: wrap;
+}
+
+.choose-form__inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+select, input {
+    background-color: transparent;
+    border-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    min-width: 250px;
+}
+
+.start__date {
+    font-size: 0.9rem;
+}
+
+
+option {
+    color: black;
+    
+   
+}
+
+.choose-form__span {
+    font-size: 0.8rem;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+button.choose-form__search-program {
+    padding: 15px 0px;
+    align-self: flex-start;
+    border-radius: 10px;
+    border: none;
+    color: rgba(80, 85, 93);
+    font-weight: 600;
+    min-width: 250px;
+    font-size: 0.9rem;
+}
+
+/* блок о туре */
+
+.about-tour {
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15%;
+    /* background-image: linear-gradient(rgb(20, 29, 37) 15%, rgb(136, 137, 152)); */
+    /* background-image: radial-gradient(circle, #4e1f28, #2b0a1c); */
+    background-color: rgb(20, 29, 37);
+    
+}
+
+.about-tour__files {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: flex-start;
+ 
+}
+
+.about-tour__static-pic img{
+    max-width: 27vw;
+    min-height: 85%;
+    border-radius: 1.7rem;
+    margin: 6vh 3vw;
+}
+
+.about-tour__text p{
+    /* color:rgb(20, 26, 37); */
+}
+
+.video-pic {
+    max-width: 27vw;
+    min-height: 85%;
+    border-radius: 1.7rem;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    object-fit: cover;
+    
+}
+
+.video-pic img {
+    position: relative;
+}
+
+.player-icon {
+    position: absolute;
+    left: 70%;
+    bottom: 20%;
+}
+
+.player-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+
+.video-zero {
+   position: absolute;
+   opacity: 0%;
+}
+
+
+.video-see {
+    position: absolute;
+    transform: scale(20%);
+    top: 45%;
+    left: 5%;
+    opacity: 100%;
+}
+
+.video-see::before {
+    opacity: 100%;
+    transform: scale(100%);
+    transition: transform 2s ease-in-out;
+    background-color: rgba(20, 44, 20, 0.759);
+
+}
+
+/* блок наше предложение */
+
+.our-offer {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 0 3%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.1) , rgb(226, 229, 232)), url(./images/pngwing.com\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+
+    /* background-image: linear-gradient( rgb(185, 186, 207), rgb(26, 36, 46)); */
+}
+
+.our-offer__text {
+    max-width: 40vw;
+}
+
+.our-offer__pics {
+    display: grid;
+    max-width: 40vw;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 60%;
+    gap: 10px;
+}
+
+.our-offer__pics img {
+    max-width:100%;
+   min-height: 100%;
+   object-fit: cover;
+
+}
+
+.offer-pic-1,
+.offer-pic-4 {
+    border-radius: 0 10%;
+}
+
+.offer-pic-2,
+.offer-pic-3 {
+    border-radius: 10% 0;
+}
+
+/* блок рейтинг туров */
+
+.tour-ratings__pics {
+    display: flex;
+}
+/* блок о трэвел-блогах */
+/* блок фотоотчет */
+/* блок футер */
 
 @media (max-width: 1000px) {
     .header__right {
+        display: none;
+    }
+    .header-button {
         display: none;
     }
     .menu-icon {

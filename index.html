@@ -2,61 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Roomtibet</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
-    <header>
-        <div class="header__left">
-            <img class="logo-pic" src="/icons8-mountain-1003.png" alt="" width="80px">
-            <div class="logo-name">Румтибет</div>
-        </div>
-        <div class="header__right">
-            <ul>
-                <li>Главная</li>
-                <li>Про гида</li>
-                <li>Программа тура</li>
-                <li>Стоимость</li>
-                <li>Блог</li>
-                <li>Контакты</li>
-            </ul>
-        <button class="header-button">Консультация</button>
-        </div>
-        <img class="menu-icon" src="./Vector.png" alt="">
-        
-    </header>
     <main>
-        <h1 class="main__text">Твое путешествие начинается здесь!</h1>
-        <form class="start__search">
-            <label class="start__label">
-                <select class="start__location" name="location">
-                    <option value="" disabled selected>Локация для тура</option>
-                    <option value="ru">Россия</option>
-                    <option value="us">США</option>
-                    <option value="uk">Великобритания</option>
-                </select>
-                <span class="start__span">выберите из списка</span>
-            </label>
-            <div class="start__label">
-                <div class="start__block-date">
-                    <input class="start__date" type="date" name="start-date">
-                    <input class="start__date" type="date" name="final-date">
+        <section class="start-page">
+            <header>
+                <div class="header__left">
+                    <img class="logo-pic" src="./images/icons8-mountain-1003.png" alt="" width="70px">
+                    <div class="logo-name">Румтибет</div>
                 </div>
-                <span class="start__span">укажите диапазон</span>
+                <div class="header__right">
+                    <ul>
+                        <li>Главная</li>
+                        <li>Про гида</li>
+                        <li>Программа тура</li>
+                        <li>Стоимость</li>
+                        <li>Блог</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+                <button class="header-button">Консультация</button>
+                <img class="menu-icon" src="./images/Vector.png" alt="">
+            </header>
+        
+            <section class="main-page">
+                <h1 class="main__text">Твое путешествие начинается здесь!</h1>
+                <form class="choose-form">
+                    <label class="choose-form__inputs">
+                        <select class="choose-form__location" name="location">
+                            <option value="" disabled selected>Локация для тура</option>
+                            <option value="russia">Россия</option>
+                            <option value="usa">США</option>
+                            <option value="uk">Великобритания</option>
+                        </select>
+                        <span class="choose-form__span">выберите из списка</span>
+                    </label>
+                    <div class="choose-form__inputs">
+                        <div class="choose-form__date">
+                            <input class="start__date" type="date" name="start-date">
+                        </div>
+                        <span class="choose-form__span">укажите диапазон</span>
+                    </div>
+                    <label class="choose-form__inputs">
+                        <select class="choose-form__quantity" name="quantity">
+                            <option value="" disabled selected>Участники</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <span class="choose-form__span">минимум 4 человека</span>
+                    </label>
+                    <button class="choose-form__search-program">Найти программу</button>
+                </form>
+            </section>
+         </section>
+
+        <section class="about-tour">
+            <div class="about-tour__files">
+                <div class="about-tour__static-pic">
+                    <img src="./images/day6-800x1066.jpg" alt="">
+                </div>
+                <div class="about-tour__video">
+                    <img class="video-pic" src="./images/20080321-Needles-Winter-Camp.jpg" alt="" height="70vh">
+                    <img class="player-icon" src="./images/Group 2.png" alt="">
+                    <iframe class="video-zero" width="560" height="315" src="https://www.youtube.com/embed/u_lZIyJ0irU?si=Jenx0AyK1YBahzqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="video-see" width="560" height="315" src="https://www.youtube.com/embed/u_lZIyJ0irU?si=Jenx0AyK1YBahzqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-            <label class="start__label">
-                <select class="start__quantity" name="quantity">
-                    <option value="" disabled selected>Участники</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-                <span class="start__span">минимум 4 человека</span>
-            </label>
-            <button class="start__search-program">Найти программу</button>
-        </form>
+            <div class="about-tour__text">
+                <p>о нашем походе</p>
+                <h2>Исследуйте все горные массивы мира вместе с нами</h2>
+                <p>Его корни уходят в один фрагмент классической латыни 45 года н. э., 
+                    то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа 
+                    Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, 
+                    «consectetur» и занялся его поисками в классической латинской литературе.</p>
+                <button>Программа тура</button>
+            </div>
+        </section>
+        
+        <section class="our-offer">
+            <div class="our-offer__text">
+                <p>наше предложение</p>
+                <h2>Лучшие программы для тебя</h2>
+                <p>Его корни уходят в один фрагмент классической латыни 45 года н. э., 
+                    то есть более двух тысячелетий назад. 
+                    Ричард МакКлинток, профессор латыни из колледжа.</p>
+                <p>Опытный гид
+                    Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                <p>Безопасный поход
+                    Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                <p>Лояльные цены
+                    Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                <button>Стоимость программ</button>
+            </div>
+            <div class="our-offer__pics">
+                <img class="offer-pic-1" src="./images/yellow-backpacked-adventurer-immerses-in-breathtaking-mountain-panoramas-ai-generated-photo.jpg" alt="">
+                <img class="offer-pic-2" src="./images/pexels-photo-238622.jpg" alt="">
+                <img class="offer-pic-3" src="./images/8_Hallstatt_Slide_Edit.webp" alt="">
+                 <img class="offer-pic-4" src="./images/Mountain-Tourism7-edited-2.webp" alt="">
+            </div>
+        </section>
+        <section class="tour-ratings">
+            <div></div>
+            <div class="tour-ratings__pics">
+                <div>
+                    <img src="./images/day6-800x1066.jpg" alt="" width="400px">
+                </div>
+                <div>
+                    <img src="" alt="" width="400px">
+                </div>
+                <div>
+                    <img src="" alt="" width="400px">
+                </div>
+            </div>
+        </section>
+        <section class="travel-blog"></section>
+        <section class="photo-report"></section>
     </main>
     <footer></footer>
 </body>
