@@ -7,11 +7,32 @@
     font-size: 16px;
 }
 
+button {
+    margin-top: 50px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: color 0.6s, background-color 0.6s;
+}
+
 body {
     min-height: 100vh;
     max-width: 100vw;
     display: flex;
     flex-direction: column;
+}
+
+h4 {
+    color: rgb(233, 192, 80);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 0;
+}
+
+h2 {
+    color: rgb(23, 22, 22);
+    font-size: 1.9rem;
+    margin-bottom: 50px;
 }
 
 /* блок первая страница */
@@ -166,8 +187,7 @@ button.choose-form__search-program {
     align-items: center;
     gap: 20vw;
     /* background-image: linear-gradient(rgb(20, 29, 37) 15%, rgb(136, 137, 152)); */
-    background-image: radial-gradient( rgb(28, 40, 50),rgb(20, 29, 37) 60%);
-    /* background-color: rgb(20, 29, 37); */
+    background-image: radial-gradient( rgb(33, 44, 53),rgb(20, 29, 37) 60%);
     padding: 50px 50px;
 }
 
@@ -189,6 +209,26 @@ button.choose-form__search-program {
 .about-tour__text {
     max-width: 40vw;
     margin-right: 30px;
+}
+
+.about-tour__text p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.about-tour__text h2 {
+    color: rgb(211, 226, 226);
+}
+
+.about-tour__text button:hover {
+    background-color: rgb(45, 45, 45);
+    color:rgb(211, 226, 226);
+}
+
+.about-tour__text button {
+    color: rgb(45, 45, 45);
+    background-color:rgb(211, 226, 226);
 }
 
 .player-icon {
@@ -228,23 +268,21 @@ button.choose-form__search-program {
 
 .our-offer {
     display: flex;
-    min-height: 100vh;
+    min-height: 120vh;
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    background-image: linear-gradient(to top, rgba(52, 52, 52, 0.1) , rgb(203, 206, 214)), url(./images/pngwing.com\ \(1\).png);
+    background-image: linear-gradient(to top, rgba(168, 168, 168, 0.2) , rgb(216, 218, 226)), url(./images/pngwing.com\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .our-offer__text {
     max-width: 45vw;
 }
 
-.our-offer__text p, button, img {
-    color: black;
-
+.our-offer h4 {
+    color: rgb(228, 191, 60);
 }
 
 .our-offer__text div {
@@ -253,7 +291,31 @@ button.choose-form__search-program {
     align-items: center;
     justify-content: center;
     gap: 1vw;
+}
 
+.our-offer__text p {
+    color: rgb(14, 14, 14);
+}
+
+.our-offer__text > p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.our-offer__text span {
+    font-weight: 600;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.our-offer__text button {
+    background-color: rgb(45, 45, 45);
+    color:rgb(211, 226, 226);
+    margin: 20px 0 50px;
+}
+.our-offer__text button:hover {
+    color: rgb(45, 45, 45);
+    background-color:rgb(211, 226, 226);
 }
 
 .our-offer__pics {
@@ -288,8 +350,21 @@ button.choose-form__search-program {
 
 /* блок рейтинг туров */
 
+
+.tour-ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .tour-ratings__text {
     text-align: center;
+    margin-top: 60px;
+}
+
+.tour-ratings h2 {
+    margin: 0;
 }
 
 .tour-ratings__pics {
@@ -298,8 +373,7 @@ button.choose-form__search-program {
     align-items: center;
     gap: 30px;
     margin: 40px 20px;
-    max-width: vw;
-    overflow: hidden;
+    max-width: vw; 
 }
 
 .tour-ratings__pics > div {
@@ -311,112 +385,107 @@ button.choose-form__search-program {
     position: relative;
 }
 
+.rating-ball {
+    position: absolute;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    top: 50px;
+    padding: 7px 10px;
+    background-color: rgba(255, 252, 247, 0.753);
+    border-radius: 7px 0 0 7px;
+}
+
+.rating-ball span {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+}
+
 .tour-ratings__rafting {
     background-image: url(./images/11936-5.jpg);
     overflow: hidden;
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    /* gap: 20px; */
 }
 
-.tour-ratings__pics > div > div {
-    /* position: relative; */
+.tour-ratings__night {
+    background-image: url(./images/StockCake-Starry\ Night\ Camping_1735062943-7.jpg);
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.tour-ratings__cycling {
+    background-image: url(./images/40629-7.jpg);
+    overflow: hidden;
+}
+
+.tour-ratings__pics__blocs {
     min-height: 40vw;
     max-height: 40vw;
-    transform: translateY(75%);
-    transition: transform 1.5s ease-in;
+    transform: translateY(80%);
+    transition: transform 1.3s ease-in;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 0 20px;
    backdrop-filter: blur(20px);
    border-radius: 30px;
-   
 }
 
-.tour-ratings__pics button {
-    margin-top: 50px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(45, 45, 45);
-    color:rgb(211, 226, 226);
-    transition: color 0.6s, background-color 0.6s;
-}
-
-.tour-ratings__pics button:hover {
-    color: rgb(45, 45, 45);
-    background-color:rgb(211, 226, 226);
-}
-
-.tour-ratings__pics div:hover {
+.tour-ratings__pics__blocs:hover {
     transform: translateY(0%);
-    
 }
 
-.tour-ratings__rafting div div {
+.tour-ratings__pics__blocs div {
+    margin-top: 10px;
+    min-width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3vw;
+    justify-content: space-between;
+    align-items: self-start;
     line-height: 0.9;
 }
-
-
-.tour-ratings__rafting div div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3vw;
-    line-height: 0.9;
-}
-
-.tour-ratings__pics div > div > p {
-    margin-top: 50px;
-    font-size: 1.2rem;
-}
-
 
 .tour-ratings__pics h3 {
     font-size: 1.5rem;
 }
 
-.tour-ratings__pics div div div p {
+.tour-ratings__pics__blocs span {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.tour-ratings__price {
+    max-width: max-content;
     font-size: 1.5rem;
     font-weight: 600;
     background-color: rgba(195, 196, 197, 0.759);
     padding: 10px 20px;
     border-radius: 5px;
-    color: azure;
-    
+    color: azure; 
 }
 
-.tour-ratings__pics span {
-    font-size: 0.9rem;
-    font-weight: 400;
+.tour-ratings__pics__blocs p {
+    font-size: 1.2rem;
 }
 
-
-
-.tour-ratings__night {
-    background-image: url(./images/StockCake-Starry\ Night\ Camping_1735062943-7.jpg);
-    background-position: bottom;
+.tour-ratings button {
+    background-color: rgb(45, 45, 45);
+    color:rgb(211, 226, 226);
+    margin-bottom: 70px;
 }
 
-.tour-ratings__cycling {
-    background-image: url(./images/40629-7.jpg);
+.tour-ratings button:hover {
+    color: rgb(45, 45, 45);
+    background-color:rgb(211, 226, 226);
 }
 
+.rating-button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
 
-/* .tour-ratings__pics img {
-    max-width: 30vw;
-    min-height: 40vw;
-    border-radius: 30px;
-    object-fit: cover;
-} */
 
 
 /* блок о трэвел-блогах */
