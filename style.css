@@ -20,6 +20,7 @@ body {
     max-width: 100vw;
     display: flex;
     flex-direction: column;
+    
 }
 
 h4 {
@@ -41,7 +42,8 @@ h2 {
     background-image: linear-gradient(rgba(0,0,0,0.1) 60%, rgb(20, 29, 37)), url(./images/freepik__a-man-is-sitting-with-his-back-to-the-center-of-th__61227.png);
     background-size: cover;
     background-position: 50% 80%;
-    
+    position: relative;
+
 }
 
 header {
@@ -49,13 +51,127 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    position: relative;
 }
 
 .header__right {
     display: flex;
-    position: relative;
     align-self: flex-start;
     flex-shrink: 0;
+    max-width: 100vw;
+}
+
+
+
+.header__menu {
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    margin-left: auto;
+    padding: 10px 30px;
+    opacity: 80%; 
+    width: 100%;
+}
+
+.header__menu a {
+    text-decoration: none;
+}
+
+.header__toggle {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 20px;
+}
+
+.header__toggle span {
+    height: 3px;
+    width: 100%;
+    transform: scale(1);
+    background-color: white;
+    border-radius: 3px;
+}
+
+.header__toggle::after, .header__toggle::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: white;
+    transition: all 0.3s ease 0s;
+
+}
+
+.header__toggle::after {
+    top: 0;
+}
+
+.header__toggle::before {
+    bottom: 0;
+}
+
+.header__toggle.active span {
+    transform: scale(0);
+}
+
+.header__toggle.active::after {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.header__toggle.active::before {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.open {
+    display: flex !important;
+}
+
+@media (max-width: 750px) {
+    .header__toggle {
+        display: flex;
+    }
+
+    .header__right {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 40px 0px;
+        background-color: rgb(14, 12, 58);
+        animation: toggle-animation 0.8s ease-in-out;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+ 
+    .header__menu {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@keyframes toggle-animation {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 .logo-pic {
@@ -72,17 +188,8 @@ header {
     font-size: 0.7rem;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    gap: 50px;
-    margin-left: auto;
-    padding: 10px 100px;
-    opacity: 80%; 
-}
-
-li:hover {
-    color:rgb(227, 184, 131);
+.header__menu a:hover {
+    color:rgb(239, 193, 138);
 }
 
 .header-button {
@@ -92,18 +199,13 @@ li:hover {
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 20px;
-    
 }
 
 .header-button:hover {
     color: rgb(53, 88, 149);
     background-color: rgb(211, 226, 226);
-
 }
 
-.menu-icon {
-    display: none;
-}
 
 section.main-page {
     display: flex;
@@ -119,6 +221,8 @@ section.main-page {
     margin-top: 50px;
     font-weight: 600;
 }
+
+
 
 /* форма выбора */
 
@@ -148,6 +252,7 @@ select, input {
     padding: 10px 20px;
     font-weight: 600;
     min-width: 250px;
+    border: solid;
 }
 
 .start__date {
@@ -156,9 +261,7 @@ select, input {
 
 
 option {
-    color: black;
-    
-   
+    color: rgb(45, 45, 45);
 }
 
 .choose-form__span {
@@ -176,6 +279,12 @@ button.choose-form__search-program {
     font-weight: 600;
     min-width: 250px;
     font-size: 0.9rem;
+}
+
+button.choose-form__search-program:hover {
+    transition: color 0.6s, background-color 0.6s;
+    background-color: rgb(82, 93, 111);
+    color: rgb(211, 226, 226);
 }
 
 /* блок о туре */
@@ -272,9 +381,10 @@ button.choose-form__search-program {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    background-image: linear-gradient(to top, rgba(168, 168, 168, 0.2) , rgb(216, 218, 226)), url(./images/pngwing.com\ \(1\).png);
+    background-image: linear-gradient(to top, rgba(29, 22, 22, 0.1) , rgb(237, 238, 241)), url(./images/pngwing.com\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
 }
 
 .our-offer__text {
@@ -289,6 +399,7 @@ button.choose-form__search-program {
     display: grid;
     grid-template-columns: 60px 1fr;
     align-items: center;
+    justify-items: center;
     justify-content: center;
     gap: 1vw;
 }
@@ -316,6 +427,7 @@ button.choose-form__search-program {
 .our-offer__text button:hover {
     color: rgb(45, 45, 45);
     background-color:rgb(211, 226, 226);
+    border: 1px solid rgb(45, 45, 45);
 }
 
 .our-offer__pics {
@@ -335,7 +447,6 @@ button.choose-form__search-program {
    min-height: 100%;
    object-fit: cover;
    opacity: 85%;
-
 }
 
 .offer-pic-1,
@@ -358,7 +469,7 @@ button.choose-form__search-program {
     align-items: center;
 }
 
-.tour-ratings__text {
+.tour-ratings__header {
     text-align: center;
     margin-top: 60px;
 }
@@ -373,7 +484,6 @@ button.choose-form__search-program {
     align-items: center;
     gap: 30px;
     margin: 40px 20px;
-    max-width: vw; 
 }
 
 .tour-ratings__pics > div {
@@ -399,7 +509,6 @@ button.choose-form__search-program {
 }
 
 .rating-ball span {
-    font-size: 1.2rem;
     color: black;
     font-weight: 500;
 }
@@ -479,6 +588,7 @@ button.choose-form__search-program {
 .tour-ratings button:hover {
     color: rgb(45, 45, 45);
     background-color:rgb(211, 226, 226);
+    border: 1px solid rgb(45, 45, 45);
 }
 
 .rating-button {
@@ -489,22 +599,204 @@ button.choose-form__search-program {
 
 
 /* блок о трэвел-блогах */
+
+.travel-blog {
+    min-height: 170vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    background-image: linear-gradient(rgba(0,0,0,0.1) 60%, rgb(238, 238, 238)), url(./images/2151910069.jpg);
+    background-size: cover;
+}
+
+.travel-blog__header {
+    text-align: center;
+}
+
+.travel-blog__header h2 {
+    color: rgb(211, 226, 226);;
+}
+
+.travel-blog__blocks {
+    display: grid;
+    grid-template: 50vh 50vh / 1fr 1fr;
+    grid-template-rows: 50vh;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+[class^="travel-blog__blocks__"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    /* padding-right: 20px; */
+    border-radius: 1vw;
+    background-color: azure;  
+}
+
+.travel-blog__blocks img {
+    display: inline;
+    max-width: 20vw;
+    min-height: 25vw;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.travel-blog__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+    padding: 0 20px;
+    /* gap: 10px; */
+
+}
+
+.travel-blog__text-1 {
+    color: rgb(16, 16, 16);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.travel-blog__text-2 {
+    color: rgb(16, 16, 16);
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.travel-blog__text div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.travel-blog__text div p:first-child {
+    color: rgb(233, 192, 80);
+    font-weight: 500;
+}
+
+.travel-blog__text div p:nth-child(2) {
+    color: rgb(16, 16, 16);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.travel-blog__text-1:hover,
+.travel-blog__text div p:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+
+.travel-blog button {
+    background-color: rgb(45, 45, 45);
+    color:rgb(211, 226, 226);
+    margin-top: 50px;
+}
+
+.travel-blog button:hover {
+    color: rgb(45, 45, 45);
+    background-color:rgb(211, 226, 226);
+    border: 1px solid rgb(45, 45, 45);
+}
+
+
 /* блок фотоотчет */
+
+.photo-report {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(238, 238, 238);
+    position: relative;
+}
+
+.photo-report__header {
+    text-align: center;
+}
+
+.photo-report__pics-block {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 100px);
+}
+
+.photo-report__pics-1 {
+    grid-column: 1/3;
+    object-fit: cover;
+}
+
+.photo-report__pics-block img {
+    object-fit: cover;
+}
+
+.photo-report button {
+    background-color: rgb(45, 45, 45);
+    color:rgb(211, 226, 226);
+}
+
+.photo-report button:hover {
+    color: rgb(45, 45, 45);
+    background-color:rgb(211, 226, 226);
+    border: 1px solid rgb(45, 45, 45);
+}
+
+
 /* блок футер */
 
-@media (max-width: 1000px) {
-    .header__right {
-        display: none;
-    }
+/* @media (max-width: 768px) {
     .header-button {
         display: none;
     }
-    .menu-icon {
-        display: block;
+    .header__menu-icon {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        
     }
     header {
         margin: 0 0.5rem;
     }
+    .header__menu {
+        flex-direction: column;
+        align-self: flex-start;
+        display: none;
+    }
+
+    .header__toggle:checked ~.header__menu {
+        display: flex;
+        transform: translateX(-60%);
+        /* background-color: rgb(45, 38, 70); */
+        opacity: 1;
+        justify-content: flex-start;
+    
+    }
+ */
+
+
+    /* .start-page {
+        background-image: none;
+        background-color: rgb(42, 33, 75);
+    } */
+    /* .header__left,
+    .choose-form,
+    .main__text {
+        display: none;
+    } */
+
+
 } 
 
 
