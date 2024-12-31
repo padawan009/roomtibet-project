@@ -800,7 +800,7 @@ footer {
 }
 
 .footer__block-1 {
-    /* max-width: 90vw; */
+    /* min-width: 100vw; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -825,6 +825,14 @@ footer {
     font-weight: 800;
 }
 
+.footer__block-1__visible-header {
+    display: block;
+}
+
+.footer__block-1__hidden-header {
+    display: none;
+}
+
 .footer__block-1__right {
     display: flex;
     flex-direction: column;
@@ -833,7 +841,7 @@ footer {
 }
 
 .footer-form {
-    max-height: 50px;
+    /* max-height: 50px; */
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -186,7 +186,7 @@
     .travel-blog__header {
         align-self: flex-start;
         text-align: start;
-        padding: 0 20px;
+        padding: 0px 20px 20px;
        
     }
 
@@ -239,7 +239,7 @@
     .photo-report__header {
         text-align: start;
         align-self: flex-start;
-        padding: 0 20px;
+        padding: 0 20px 20px;
     }
 
     .photo-report__pics-block {
@@ -268,28 +268,67 @@
         grid-column: 2/3;
     }
 
-    /* footer {
-        max-height: 100vh;
-    } */
-
     .footer__block-1 {
         flex-direction: column;
-        /* justify-content: flex-start;
-        align-self: flex-start; */
-        /* max-width: 100vw; */
-        /* max-height: 70vh; */
         gap: 0;
         padding: 20px;
         position: relative;
-        margin: 0 100px;
         top: -30px; 
-        /* margin: 0 0px; */
+
     }
 
     .footer__block-1__left {
         align-self: flex-start;
-        padding: 0px;
-        margin: 0;
+    }
+
+    .footer__block-1__left h2 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .footer__block-1__left h4 {
+        font-size: 1.3rem;
+        padding-bottom: 10px !important;
+    }
+
+    .footer-form__p1 {
+        font-size: 1.2rem;
+    }
+    .footer-form__p2,
+    .footer-form__p2 span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .footer__block-1__visible-header {
+        display: none;
+    }
+
+    .footer__block-1__hidden-header {
+        display:block;
+    }
+
+    .footer__block-1__left h4, h2 {
+        margin: 10px 0px;
+        padding: 0;
+        text-wrap: wrap;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 10px;
+        /* align-items: flex-start;
+        justify-content: flex-start; */
+    }
+
+    .footer-form input {
+        min-width: 90vw;
+        margin: 0 ;
+    }
+
+    .footer-form button {
+        align-self: flex-start;
     }
     
     .footer__block-2 {
