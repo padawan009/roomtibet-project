@@ -1,4 +1,20 @@
-@media (max-width: 750px) {
+@media (max-width: 480px) {
+    * {
+        font-size: 0.7rem;
+        max-width: 100vw;
+    }
+
+    h4 {
+        padding-top: 30px;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+    
+    .logo-pic {
+        scale: 80%;
+    }
     .header__toggle {
         display: flex;
     }
@@ -24,6 +40,306 @@
     .header__menu {
         flex-direction: column;
         gap: 30px;
+
     }
 
+    .choose-form :not(.choose-form__search-program) {
+        display: none;
+    }
+
+    .choose-form {
+        background-color: transparent;
+    }
+
+    .main__text {
+        font-size: 20px;
+        text-wrap: balance;
+        margin: 15% 5%;
+    }
+
+    .about-tour__static-pic {
+        visibility: hidden;
+    }
+
+    .about-tour {
+        flex-direction: column-reverse;
+        /* min-height: 150vh;
+        padding-bottom: 200px; */
+ 
+    }
+
+    .about-tour__files {
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .about-tour__video video{
+        /* right: 18vw; */
+        /* bottom: 60px;
+        width: 110%; */
+        min-height: 100%;
+        margin-bottom: 10px;
+        top: 0%;
+        left: 0%;
+    }
+
+    .player-icon {
+        left: 45%;
+        bottom: 40%;
+    }
+
+    .about-tour__video.enlarged {
+        min-width: 100vw;
+        left: -20%;
+        top: 5%;
+    }
+
+    .about-tour {
+        padding: 20px;
+        gap: 0vh;
+    }
+
+    /* .about-tour__static-pic {
+        display: none;
+    } */
+
+    .about-tour__text {
+        max-width: 100vw;
+        justify-content: center;
+    }
+
+    .about-tour__text p {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .about-tour__text h4 {
+        margin: 0px;
+    }
+
+    button {
+        align-self: center;
+        font-size: 1.1rem;
+    }
+
+    .our-offer {
+        padding: 0px 20px;
+    }
+
+    .our-offer__text {
+        max-width: 100vw;
+    }
+
+    .our-offer__text p {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .our-offer__text div p,
+    .our-offer__text span  {
+        font-size: 150%;
+    }
+
+    .our-offer__pics {
+        display: none;
+    }
+
+    .tour-ratings {
+        max-width: 100vw;
+    }
+    
+    .tour-ratings__header {
+        align-self: flex-start;
+        padding: 0 20px;
+    }
+
+    .tour-ratings__header h4 {
+        padding: 0;
+        text-align: start;
+    }
+
+    .tour-ratings__pics {
+        justify-content: flex-start;
+        min-width: 100vw;
+        min-height: 100vh;
+        padding: 0 20px;
+        overflow-x: scroll;
+    }
+
+    .tour-ratings__pics > div {
+        min-width: 60%;
+        min-height: calc(100vh * 0.9);
+    }
+
+    .tour-ratings__pics__blocs {
+        transform: translateY(140%);
+        pointer-events: none;
+    }
+
+    .rating-ball span{
+        font-size: 1.2rem;
+    }
+
+    .travel-blog__header {
+        align-self: flex-start;
+        text-align: start;
+        padding: 0 20px;
+       
+    }
+
+    .travel-blog__blocks {
+        /* min-width: 100vw; */
+        padding: 0 10px;
+        grid-template-columns: 60%;
+        grid-template-rows: auto;
+        grid-auto-columns: 60%;
+        grid-auto-flow: column;
+        justify-content: flex-start;
+        gap: 20px;
+        overflow-y: scroll;
+    
+    }
+        
+    [class^="travel-blog__blocks__"] {
+        flex-direction: column;
+    }
+
+    .travel-blog__blocks img {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        padding: 0px;
+    }
+
+    .travel-blog__text {
+        min-height: 60vh;
+        padding: 20px;
+    }
+
+    .travel-blog__text-2 {
+       font-size: 1.1rem;
+       margin-top: 0;
+    }
+
+    .travel-blog__text-1 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .travel-blog__text div p {
+        font-size: 1.2rem !important;
+    }
+    
+    .photo-report {
+        min-height: 160vh;
+    }
+    .photo-report__header {
+        text-align: start;
+        align-self: flex-start;
+        padding: 0 20px;
+    }
+
+    .photo-report__pics-block {
+        min-width: 100vw;
+        padding: 0 10px;
+        grid-template-columns: 300px;
+        grid-template-rows: 270px;
+        grid-auto-columns: 300px;
+        grid-auto-flow: column;
+        justify-content: flex-start;
+        gap: 10px;
+        /* overflow: scroll; */
+        pointer-events: none;
+    }
+
+    .photo-report__pics-block img {
+
+        overflow: scroll;
+    }
+
+    .photo-report__pics-1 {
+        grid-column: 1/2;
+    }
+    
+    .photo-report__pics-5 {
+        grid-column: 2/3;
+    }
+
+    /* footer {
+        max-height: 100vh;
+    } */
+
+    .footer__block-1 {
+        flex-direction: column;
+        /* justify-content: flex-start;
+        align-self: flex-start; */
+        /* max-width: 100vw; */
+        /* max-height: 70vh; */
+        gap: 0;
+        padding: 20px;
+        position: relative;
+        margin: 0 100px;
+        top: -30px; 
+        /* margin: 0 0px; */
+    }
+
+    .footer__block-1__left {
+        align-self: flex-start;
+        padding: 0px;
+        margin: 0;
+    }
+    
+    .footer__block-2 {
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        max-height: 100%;
+        min-width: 100vw;
+        padding: 20px 10px;
+        gap: 30px;
+    }
+
+    [class^="footer__block-2__"] {
+        max-width: 100vw;
+        text-align: start;
+    }
+
+    .footer__block-2__left div {
+        display: flex;
+        gap: 40px;
+        margin-top: 20px;
+
+    }
+
+    .footer__block-2__left span {
+        font-size: 1.3rem;
+    }
+
+    .footer__block-2 div a, li {
+        font-size: 1.2rem;
+    }
+
+    .footer__block-2__header {
+        font-size: 1.8rem;
+    }
+
+    .footer__block-2__left__text {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .footer__block-3 {
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 10px;
+        
+    }
+
+    .footer__block-3 p, a {
+        font-size: 1.2rem;
+    }
+
+    
 }
