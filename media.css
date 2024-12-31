@@ -11,6 +11,13 @@
     h2 {
         margin-bottom: 40px;
     }
+
+    button {
+        align-self: center;
+        font-size: 1.1rem;
+    }
+
+    /* блок первая страница */
     
     .logo-pic {
         scale: 80%;
@@ -43,6 +50,12 @@
 
     }
 
+    .main__text {
+        font-size: 20px;
+        text-wrap: balance;
+        margin: 15% 5%;
+    }
+
     .choose-form :not(.choose-form__search-program) {
         display: none;
     }
@@ -51,11 +64,7 @@
         background-color: transparent;
     }
 
-    .main__text {
-        font-size: 20px;
-        text-wrap: balance;
-        margin: 15% 5%;
-    }
+    /* блок о туре */
 
     .about-tour__static-pic {
         visibility: hidden;
@@ -63,9 +72,6 @@
 
     .about-tour {
         flex-direction: column-reverse;
-        /* min-height: 150vh;
-        padding-bottom: 200px; */
- 
     }
 
     .about-tour__files {
@@ -99,10 +105,6 @@
         gap: 0vh;
     }
 
-    /* .about-tour__static-pic {
-        display: none;
-    } */
-
     .about-tour__text {
         max-width: 100vw;
         justify-content: center;
@@ -110,19 +112,16 @@
 
     .about-tour__text p {
         font-size: 1.3rem;
-        line-height: 1.7rem;
+        line-height: 1.8rem;
         margin-bottom: 20px;
         margin-top: 0px;
     }
 
-    .about-tour__text h4 {
-        margin: 0px;
+    .about-tour__text h2 {
+        margin-bottom: 30px;
     }
 
-    button {
-        align-self: center;
-        font-size: 1.1rem;
-    }
+    /* блок наше предложение */
 
     .our-offer {
         padding: 0px 20px;
@@ -147,6 +146,8 @@
         display: none;
     }
 
+    /* блок рейтинг туров */
+
     .tour-ratings {
         max-width: 100vw;
     }
@@ -166,6 +167,7 @@
         min-width: 100vw;
         min-height: 100vh;
         padding: 0 20px;
+        margin: 20px 0;
         overflow-x: scroll;
     }
 
@@ -183,11 +185,12 @@
         font-size: 1.2rem;
     }
 
+    /* блок о трэвел-блогах */
+
     .travel-blog__header {
         align-self: flex-start;
         text-align: start;
         padding: 0px 20px 20px;
-       
     }
 
     .travel-blog__blocks {
@@ -200,9 +203,13 @@
         justify-content: flex-start;
         gap: 20px;
         overflow-y: scroll;
-    
+        
     }
         
+    .img-link {
+        pointer-events: none;
+    }
+    
     [class^="travel-blog__blocks__"] {
         flex-direction: column;
     }
@@ -232,6 +239,8 @@
     .travel-blog__text div p {
         font-size: 1.2rem !important;
     }
+
+    /* блок фотоотчет */
     
     .photo-report {
         min-height: 160vh;
@@ -243,7 +252,7 @@
     }
 
     .photo-report__pics-block {
-        min-width: 100vw;
+        /* min-width: 100vw; */
         padding: 0 10px;
         grid-template-columns: 300px;
         grid-template-rows: 270px;
@@ -251,12 +260,6 @@
         grid-auto-flow: column;
         justify-content: flex-start;
         gap: 10px;
-        /* overflow: scroll; */
-        pointer-events: none;
-    }
-
-    .photo-report__pics-block img {
-
         overflow: scroll;
     }
 
@@ -268,13 +271,14 @@
         grid-column: 2/3;
     }
 
+    /* блок футер */
+
     .footer__block-1 {
         flex-direction: column;
         gap: 0;
         padding: 20px;
         position: relative;
         top: -30px; 
-
     }
 
     .footer__block-1__left {
@@ -318,8 +322,6 @@
         flex-direction: column;
         gap: 0;
         margin-bottom: 10px;
-        /* align-items: flex-start;
-        justify-content: flex-start; */
     }
 
     .footer-form input {
@@ -333,7 +335,6 @@
     
     .footer__block-2 {
         flex-direction: column;
-        /* justify-content: flex-end; */
         max-height: 100%;
         min-width: 100vw;
         padding: 20px 10px;
@@ -373,7 +374,6 @@
         flex-direction: column;
         padding: 20px 0px;
         gap: 10px;
-        
     }
 
     .footer__block-3 p, a {
