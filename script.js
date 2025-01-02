@@ -64,4 +64,7 @@ document.querySelector('.header__toggle').addEventListener('click', function() {
 })
 
 
-
+AOS.init({
+    disable: 'phone',
+    once: 'true'
+});

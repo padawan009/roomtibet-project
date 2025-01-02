@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./media.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
     integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
@@ -36,7 +36,8 @@
             </header>
         
             <section class="main-page">
-                <h1 class="main__text">Твое путешествие начинается здесь!</h1>
+                <h1 class="main__text" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000">Твое путешествие начинается здесь!</h1>
                 <form class="choose-form">
                     <label class="choose-form__inputs">
                         <select class="choose-form__location" name="location">
@@ -68,7 +69,8 @@
          </section>
 
         <section class="about-tour">
-            <div class="about-tour__files">
+            <div class="about-tour__files" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
                 <div class="about-tour__static-pic">
                     <img src="./images/day6-800x1066.jpg" alt="">
                 </div>
@@ -122,7 +124,8 @@
                 </div>
                 <button>Стоимость программ</button>
             </div>
-            <div class="our-offer__pics">
+            <div class="our-offer__pics" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
                 <img class="offer-pic-1" src="./images/yellow-backpacked-adventurer-immerses-in-breathtaking-mountain-panoramas-ai-generated-photo.jpg" alt="">
                 <img class="offer-pic-2" src="./images/pexels-photo-238622.jpg" alt="">
                 <img class="offer-pic-3" src="./images/Mountain-Tourism7-edited-2.webp" alt="">
@@ -134,7 +137,8 @@
                 <h4>по версии отдыхающих</h4>
                 <h2>Популярные направления</h2>
             </div>
-            <div class="tour-ratings__pics">
+            <div class="tour-ratings__pics" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
                 <div class="tour-ratings__rafting">
                     <div class="rating-ball">
                         <img src="./images/star.png" alt="">
@@ -196,7 +200,8 @@
                 <h4>делимся впечатлениями</h4>
                 <h2>Блог о путешествиях</h2>
             </div>
-            <div class="travel-blog__blocks">
+            <div class="travel-blog__blocks" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
                 <div class="travel-blog__blocks__1">
                     <img src="./images/монголия.jpg" alt="">
                     <div class="travel-blog__text">
@@ -255,9 +260,10 @@
                 <h4>фотоотчет</h4>
                 <h2>Делимся впечатлениями</h2>
             </div>
-            <div class="photo-report__pics-block">
+            <div class="photo-report__pics-block" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000">
                 <a class="img-link photo-report__pics-1" href="#">
-                    <img class="photo-report__pics-1" src="./images/у-обрыва.jpg" alt=""></a>
+                    <img src="./images/у-обрыва.jpg" alt=""></a>
                 <a class="img-link" href="#">
                     <img src="./images/лодка.jpg" alt=""></a>
                 <a class="img-link" href="#">
@@ -265,7 +271,7 @@
                 <a class="img-link" href="#">
                     <img src="./images/озеро.jpg" alt=""></a>
                 <a class="img-link photo-report__pics-5" href="#">
-                    <img class="photo-report__pics-5" src="./images/велосипед.jpg" alt=""></a>
+                    <img src="./images/велосипед.jpg" alt=""></a>
                 <a class="img-link" href="#">
                     <img src="./images/палатка.png" alt=""></a>
             </div>
@@ -273,7 +279,9 @@
         </section>
     </main>
     <footer>
-        <div class="footer__block-1">
+        <div class="footer__block-1" data-aos="flip-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1000">
             <div class="footer__block-1__left">
                 <h4>актуально</h4>
                 <h2 class="footer__block-1__visible-header">Получайте полезные рассылки о путешествиях</h2>
@@ -338,6 +346,9 @@
             <a href="#">Политика обработки персональных данных</a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>

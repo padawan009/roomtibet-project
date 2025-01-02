@@ -105,9 +105,11 @@
     }
 
     .about-tour__video.enlarged {
-        /* width: 100vw; */
-        left: -20%;
-        top: 5%;
+        /* position: fixed;
+        top: 20%;
+        left: 0; */
+        left: -7%;
+        top: 20%;
     }
 
     .about-tour {
@@ -189,7 +191,7 @@
     }
 
     .tour-ratings__pics__blocs {
-        transform: translateY(170%);
+        transform: translateY(330px);
         pointer-events: none;
     }
 
@@ -264,7 +266,7 @@
     /* блок фотоотчет */
     
     .photo-report {
-        min-height: 75vh;
+        min-height: 75svh;
     }
 
     .photo-report__header {
@@ -293,7 +295,12 @@
         grid-column: 2/3;
     }
 
+    .photo-report button  {
+        z-index: 5;
+    }
+
     /* блок футер */
+
 
     .footer__block-1 {
         flex-direction: column;
