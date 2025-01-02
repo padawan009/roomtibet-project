@@ -266,7 +266,7 @@
     /* блок фотоотчет */
     
     .photo-report {
-        min-height: 85svh;
+        min-height: 95dvh;
     }
 
     .photo-report__header {
