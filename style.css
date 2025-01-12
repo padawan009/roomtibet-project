@@ -161,6 +161,7 @@ header {
     height: auto;
     object-fit: cover;
     /* margin-right: 40px; */
+    margin-top: 10px;
     
 }
 
@@ -368,10 +369,11 @@ button.choose-form__search-program:hover {
 }
 
 .about-tour__video.enlarged {
-    width: 250%;
+    width: 380%;
     position: absolute;
-    right: -100%;
-    top: 5%;
+    /* transform: scale(300%); */
+    left: -140%;
+    top: -40%;
 }
 
 .about-tour::before {
@@ -709,7 +711,7 @@ button.choose-form__search-program:hover {
 /* блок фотоотчет */
 
 .photo-report {
-    min-height: 100vh;
+    min-height: 110vh;
     max-width: 100vw;
     display: flex;
     flex-direction: column;
