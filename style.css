@@ -369,11 +369,11 @@ button.choose-form__search-program:hover {
 }
 
 .about-tour__video.enlarged {
-    width: 380%;
+    width: 350%;
     position: absolute;
     /* transform: scale(300%); */
-    left: -140%;
-    top: -40%;
+    left: -110%;
+    top: -30%;
 }
 
 .about-tour::before {
