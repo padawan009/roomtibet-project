@@ -384,6 +384,9 @@
         margin-top: 20px;
     }
 
+    .footer__block-2__left {
+        min-width: 80vw;
+    }
     .footer__block-2__left span {
         font-size: 1.3rem;
     }
@@ -745,11 +748,9 @@
     .footer-form__p1 {
         font-size: 0.9rem;
         padding: 0 30px;
-        /* margin-left: 30px; */
     }
 
     .footer-form__p2 {
-        /* margin-left: 30px; */
         padding: 0 30px;
     }
 
@@ -780,23 +781,21 @@
     }
 
     .footer__block-2__left {
-        max-width: 40vw;
+        min-width: 300px;
     }
 
     .footer__block-2__center {
-        max-width: 50vw;
-        padding-right: 40px;
+        /* max-width: 40vw;*/
     }
 
     .footer__block-2__right {
-        max-width: 40vw;
+        min-width: 50vw;
     }
 
     .footer__block-2__left div {
         display: flex;
         gap: 40px;
         margin-top: 20px;
-
     }
 
     .footer__block-2__left span {

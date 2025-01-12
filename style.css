@@ -901,7 +901,8 @@ footer {
 .footer__block-2__left {
     display: flex;
     flex-direction: column;
-    width: 38vw;
+    width: max(200px, 35vw);
+    margin-right: 30px;
 }
 
 .footer__block-2__left__text {
@@ -931,13 +932,12 @@ footer {
 
 .footer__block-2__center {
     position: relative;
-    max-width: 25vw;
     margin-right: 70px;
+    width: max(250px, 15vw);
 }
 
 .footer__block-2__right {
      max-width: 20vw;
-     margin-right: 20px;
 }
 
 .footer__block-2__center div {
