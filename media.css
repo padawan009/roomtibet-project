@@ -22,11 +22,18 @@
 
     .start-page {
         min-height: 80vh;
+        overflow: hidden;
     }
     
     .logo-pic {
         scale: 80%;
     }
+
+    header {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
     .header__toggle {
         display: flex;
     }
@@ -52,7 +59,7 @@
     .header__menu {
         flex-direction: column;
         gap: 30px;
-
+        padding: 10px 40px;
     }
 
     .main__text {
@@ -67,7 +74,7 @@
 
     .choose-form__search-program {
         position: relative;
-        top: -100px;
+        
     }
 
     .choose-form {
@@ -83,6 +90,7 @@
     .about-tour {
         flex-direction: column-reverse;
         min-height: 80vh;
+        overflow: hidden;
     }
 
     .about-tour__files {
@@ -140,6 +148,8 @@
     .our-offer {
         padding: 0px 20px;
         min-height: 80vh;
+        overflow: hidden;
+        background-position: 0px 100px;
     }
 
     .our-offer__text {
@@ -164,8 +174,9 @@
     /* блок рейтинг туров */
 
     .tour-ratings {
-        max-width: 100vw;
+        max-width: 100%;
         min-height: 70vh;
+        overflow: hidden;
     }
     
     .tour-ratings__header {
@@ -209,6 +220,7 @@
 
     .travel-blog {
         min-height: 80vh;
+        overflow: hidden;
     }
 
     .travel-blog__header {
@@ -262,7 +274,9 @@
     /* блок фотоотчет */
     
     .photo-report {
-        min-height: 140lvh;
+        min-height: 120lvh;
+        overflow: hidden;
+        max-width: 100%;
     }
 
     .photo-report__header {
@@ -310,6 +324,7 @@
         position: absolute;
         top: -350px; 
         margin: 0;
+        overflow: hidden;
     }
 
     .footer__block-1__left {
@@ -368,8 +383,7 @@
         flex-direction: column;
         max-height: 100%;
         min-width: 100vw;
-        padding: 40px 10px;
-        /* margin-top: 240px; */
+        padding: 40px 20px;
         gap: 30px;
     }
 
@@ -448,6 +462,10 @@
     .logo-pic {
         scale: 90%;
     }
+    
+    header {
+        justify-content: space-between;
+    }
 
     .header__toggle {
         display: flex;
@@ -474,6 +492,7 @@
     .header__menu {
         flex-direction: column;
         gap: 30px;
+        padding: 10px 40px;
     }
 
     .main__text {
@@ -484,6 +503,7 @@
 
     .choose-form {
         margin: 10px;
+        padding: 40px 10px;
     }
 
     select, input,
@@ -521,13 +541,13 @@
     }
 
     .about-tour {
-        padding: 20px;
-        gap: 0vh;
+        gap: 0px;
     }
 
     .about-tour__text {
         max-width: 100vw;
         justify-content: center;
+        /* padding: 0px 50px; */
     }
 
     .about-tour__text p {
@@ -548,9 +568,10 @@
     /* блок наше предложение */
 
     .our-offer {
-        padding: 0px 20px;
+        padding: 0px 30px;
         min-height: 80vh;
         gap: 20px;
+        background-position: 0px 90px;
     }
 
     .our-offer__text {
@@ -604,19 +625,19 @@
     }
 
     .tour-ratings__pics {
-        justify-content: flex-start;
         min-width: 100vw;
         padding: 0 20px;
         margin: 20px 0;
+        gap: 20px;
     }
 
     .tour-ratings__pics > div {
-        min-width: 1fr;
-        min-height: 1fr;
+        max-width: 35vw;
+        height: 40vw;
     }
 
     .tour-ratings__pics__blocs {
-        transform: translateY(70%);
+        transform: translateY(75%);
         pointer-events: none;
         padding: 0 15px;
     }
@@ -817,7 +838,7 @@
 
     .footer__block-3 {
         min-height: 7vh;
-        padding: 0px 10px;
+        padding: 0px 30px;
     }
 
 
