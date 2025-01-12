@@ -274,7 +274,7 @@
     /* блок фотоотчет */
     
     .photo-report {
-        min-height: 120lvh;
+        min-height: 130lvh;
         overflow: hidden;
         max-width: 100%;
     }
