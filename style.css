@@ -9,6 +9,7 @@
     --yellow-header-color: rgb(233, 192, 80);
     --black-header-color: rgb(23, 22, 22);
     color: var(--white-grey-color);
+    margin: 0;
 }
 
 button {
