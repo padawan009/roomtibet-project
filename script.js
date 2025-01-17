@@ -58,7 +58,7 @@ video.addEventListener('ended', () => {
 
 
 
-document.querySelector('.header__toggle').addEventListener('click', function() {
+document.querySelector('.header__toggle__mobile').addEventListener('click', function() {
     this.classList.toggle('active');
     document.querySelector('.header__right').classList.toggle('open');
 })

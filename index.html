@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Roomtibet</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./reset1g.css">
     <link rel="stylesheet" href="./media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
     integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" 
@@ -20,7 +20,7 @@
                     <div class="logo-name">Румтибет</div>
                 </div>
                 <div class="header__right">
-                    <ul class="header__menu">
+                    <ul class="header__menu-item">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Про гида</a></li>
                         <li><a href="#">Программа тура</a></li>
@@ -29,8 +29,8 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
-                    <button class="header-button">Консультация</button>
-                <div class="header__toggle">
+                    <button class="header__button">Консультация</button>
+                <div class="header__toggle__mobile">
                     <span></span>
                 </div>
             </header>
@@ -39,8 +39,8 @@
                 <h1 class="main__text" data-aos="zoom-in" data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000">Твое путешествие начинается здесь!</h1>
                 <form class="choose-form">
-                    <label class="choose-form__inputs">
-                        <select class="choose-form__location" name="location">
+                    <label class="choose-form__input">
+                        <select class="choose-form__location active-form" name="location">
                             <option value="" disabled selected>Локация для тура</option>
                             <option value="russia">Россия</option>
                             <option value="usa">США</option>
@@ -48,14 +48,14 @@
                         </select>
                         <span class="choose-form__span">выберите из списка</span>
                     </label>
-                    <div class="choose-form__inputs">
+                    <div class="choose-form__input">
                         <div class="choose-form__date">
-                            <input class="start__date" type="date" name="start-date">
+                            <input class="start__date active-form" type="date" name="start-date">
                         </div>
                         <span class="choose-form__span">укажите диапазон</span>
                     </div>
-                    <label class="choose-form__inputs">
-                        <select class="choose-form__quantity" name="quantity">
+                    <label class="choose-form__input">
+                        <select class="choose-form__quantity active-form" name="quantity">
                             <option value="" disabled selected>Участники</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
